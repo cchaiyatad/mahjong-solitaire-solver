@@ -2,6 +2,7 @@ package utils
 
 import (
 	"flag"
+	"os"
 )
 
 const (
@@ -13,7 +14,17 @@ type Args struct {
 }
 
 func GetArgs() *Args {
-	port := flag.String(PORT_KEY, "8080", "a port to run api server")
+	flagPort := flag.String(PORT_KEY, "", "a port to run api server (if not provide a env PORT will be use, if both env and flag not provide 8080 will be use")
 	flag.Parse()
-	return &Args{Port: *port}
+
+	if *flagPort != "" {
+		return &Args{Port: *flagPort}
+	}
+
+	envPort := os.Getenv("PORT")
+	if envPort != "" {
+		return &Args{Port: envPort}
+	}
+
+	return &Args{Port: "8080"}
 }

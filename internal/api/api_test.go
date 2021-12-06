@@ -1,6 +1,7 @@
 package api
 
 import (
+	"flag"
 	"fmt"
 	"io"
 	"net/http"
@@ -39,11 +40,13 @@ func TestMain(m *testing.M) {
 
 func TestCreateAPIController(t *testing.T) {
 	t.Run("CreateAPIController ", func(t *testing.T) {
-		givenArgs := &utils.Args{Port: "1234"}
-		gotController := CreateAPIController(givenArgs)
+		os.Args = []string{"app", "-port", "1234"}
+		flag.CommandLine = flag.NewFlagSet(os.Args[0], flag.ExitOnError)
+
+		gotController := CreateAPIController()
 		expectedPort := "1234"
 
-		assert.Equal(t, expectedPort, gotController.Args.Port)
+		assert.Equal(t, expectedPort, gotController.args.Port)
 	})
 }
 func TestGetPort(t *testing.T) {

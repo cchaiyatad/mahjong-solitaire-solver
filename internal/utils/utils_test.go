@@ -64,4 +64,14 @@ func TestFlag(t *testing.T) {
 		args := GetArgs()
 		assert.Equal(t, "9090", args.Port)
 	})
+
+	t.Run("args.Port should get from env", func(t *testing.T) {
+		os.Args = []string{"app"}
+		flag.CommandLine = flag.NewFlagSet(os.Args[0], flag.ExitOnError)
+
+		os.Setenv("PORT", "1234")
+
+		args := GetArgs()
+		assert.Equal(t, "1234", args.Port)
+	})
 }

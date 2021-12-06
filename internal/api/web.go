@@ -8,18 +8,18 @@ import (
 )
 
 type APIController struct {
-	Args *utils.Args
+	args *utils.Args
 }
 
-func CreateAPIController(args *utils.Args) *APIController {
-	return &APIController{Args: args}
+func CreateAPIController() *APIController {
+	return &APIController{args: utils.GetArgs()}
 }
 
-func (*APIController) StartServer(args *utils.Args) error {
-	fmt.Printf("Listening on port %s\n", args.Port)
+func (con *APIController) StartServer() error {
+	fmt.Printf("Listening on port %s\n", con.args.Port)
 
 	server := &http.Server{
-		Addr:    getPort(args),
+		Addr:    getPort(con.args),
 		Handler: getServerMux(),
 	}
 
