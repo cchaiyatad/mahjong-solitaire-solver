@@ -1,5 +1,8 @@
 # Mahjong Solitaire Solver
 
+[![ci](https://github.com/cchaiyatad/mahjong-solitaire-solver/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/cchaiyatad/mahjong-solitaire-solver/actions/workflows/ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/cchaiyatad/mahjong-solitaire-solver/badge.svg?branch=master)](https://coveralls.io/github/cchaiyatad/mahjong-solitaire-solver?branch=master)
+
 The purpose of this work is to generate a solvable mahjong solitaire board and solve it by implementing from T. Stam's paper [Solving Mahjong Solitaire Positions](http://iivq.net/scriptie/scriptie-bsc.pdf) paper. However, we only **Random** and **MaxBlock** heuristic and **Random** and **MultipleFirst** strategies.
 
 ## What can we do?
