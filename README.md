@@ -18,7 +18,7 @@ A new layout can be added too!, but unfortunately, it can not be done via REST A
 
 ### Host
 
-You can either use `https://mahjong-solitaire-solver.herokuapp.com/` or `localhost` on your local machine.
+You can either use [https://mahjong-solitaire-solver.herokuapp.com/](https://mahjong-solitaire-solver.herokuapp.com/) or `localhost` on your local machine.
 
 ### GET layout
 
