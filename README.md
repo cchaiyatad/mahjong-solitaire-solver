@@ -16,6 +16,10 @@ A new layout can be added too!, but unfortunately, it can not be done via REST A
 
 ## API
 
+### Host
+
+You can either use `https://mahjong-solitaire-solver.herokuapp.com/` or `localhost` on your local machine.
+
 ### GET layout
 
 Returns a list of layouts with 200 respond that can be use in `/solve` endpoint.
