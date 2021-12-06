@@ -1,0 +1,17 @@
+<layout>
+    <name>two-tile</name>
+    <size x="6" y="6" z="1"/>
+    <tiles>
+        <tile x="1" y="2" z="0"/>
+        <tile x="3" y="2" z="0"/>
+    </tiles>
+</layout>
+
+<!-- 
+    x x x x x x
+    x x x x x x
+    x 0 0 1 1 x
+    x 0 0 1 1 x
+    x x x x x x
+    x x x x x x
+ -->

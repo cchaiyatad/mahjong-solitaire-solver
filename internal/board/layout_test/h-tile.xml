@@ -1,0 +1,20 @@
+<layout>
+    <name>h-tile</name>
+    <size x="8" y="8" z="1"/>
+    <tiles>
+        <tile x="1" y="1" z="0"/>
+        <tile x="5" y="1" z="0"/>
+        <tile x="3" y="2" z="0"/>
+        <tile x="1" y="3" z="0"/>
+        <tile x="5" y="3" z="0"/>
+    </tiles>
+</layout>
+
+<!-- 
+    x x x x x x x x
+    x 0 0 x x 0 0 x
+    x 0 0 0 0 0 0 x
+    x 0 0 0 0 0 0 x
+    x 0 0 x x 0 0 x
+    x x x x x x x x
+ -->

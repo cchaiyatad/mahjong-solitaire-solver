@@ -1,0 +1,17 @@
+<layout>
+    <name>five-tile</name>
+    <size x="6" y="6" z="2"/>
+    <tiles>
+        <tile x="0" y="0" z="0"/>
+        <tile x="2" y="0" z="0"/>
+        <tile x="0" y="2" z="0"/>
+        <tile x="2" y="2" z="0"/>
+        <tile x="1" y="1" z="1"/>
+    </tiles>
+</layout>
+<!-- 
+    0 0 0 0
+    0 1 1 0
+    0 1 1 0
+    0 0 0 0
+ -->

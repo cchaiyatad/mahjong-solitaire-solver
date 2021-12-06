@@ -1,0 +1,16 @@
+<layout>
+    <name>one-tile-odd</name>
+    <size x="6" y="6" z="1"/>
+    <tiles>
+        <tile x="1" y="1" z="0"/>
+    </tiles>
+</layout>
+
+<!-- 
+    x x x x x x
+    x 0 0 x x x
+    x 0 0 x x x
+    x x x x x x
+    x x x x x x
+    x x x x x x
+ -->

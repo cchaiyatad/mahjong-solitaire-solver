@@ -1,0 +1,10 @@
+<layout>
+    <name>tower-four</name>
+    <size x="2" y="2" z="4"/>
+    <tiles>
+        <tile x="0" y="0" z="0"/>
+        <tile x="0" y="0" z="1"/>
+        <tile x="0" y="0" z="2"/>
+        <tile x="0" y="0" z="3"/>
+    </tiles>
+</layout>

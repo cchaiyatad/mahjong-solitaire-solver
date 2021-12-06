@@ -1,0 +1,12 @@
+<layout>
+    <name>small-pyramid</name>
+    <size x="6" y="6" z="2"/>
+    <tiles>
+        <tile x="0" y="0" z="0"/>
+        <tile x="2" y="0" z="0"/>
+        <tile x="0" y="2" z="0"/>
+        <tile x="2" y="2" z="0"/>
+        <tile x="0" y="1" z="1"/>
+        <tile x="2" y="1" z="1"/>
+    </tiles>
+</layout>

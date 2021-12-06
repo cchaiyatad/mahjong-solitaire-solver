@@ -1,0 +1,24 @@
+<layout>
+    <name>one-two-one-two-one</name>
+    <size x="10" y="4" z="1"/>
+    <tiles>
+        <tile x="0" y="1" z="0"/>
+
+        <tile x="2" y="0" z="0"/>
+        <tile x="2" y="2" z="0"/>
+
+        <tile x="4" y="1" z="0"/>
+
+        <tile x="6" y="0" z="0"/>
+        <tile x="6" y="2" z="0"/>
+
+        <tile x="8" y="1" z="0"/>
+    </tiles>
+</layout>
+
+<!-- 
+    x x 0 0 x x 0 0 x x
+    0 0 0 0 0 0 0 0 0 0
+    0 0 0 0 0 0 0 0 0 0
+    x x 0 0 x x 0 0 x x
+ -->
